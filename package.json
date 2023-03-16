@@ -1,5 +1,5 @@
 {
-  "name": "TS-Poseidon",
+  "name": "poseidon-logger",
   "version": "1.0.0",
   "description": "TS-Poseidon is a simple easy-to-use TypeScript logger",
   "main": "index.js",
