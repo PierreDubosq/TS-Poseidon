@@ -1,6 +1,6 @@
 {
   "name": "poseidon-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TS-Poseidon is a simple easy-to-use TypeScript logger",
   "main": "index.js",
   "repository": "git@github.com:PierreDubosq/TS-Poseidon.git",
