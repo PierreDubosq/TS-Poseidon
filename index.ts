@@ -29,6 +29,16 @@ class Poseidon {
   public static error(format: any, ...args: any[]): void {
     console.log(`\033[1;91m${Poseidon.datetime()} [ ERROR ]\033[0m ${format}`, ...args);
   }
+
+  /**
+   * @brief Log an info message
+   * 
+   * @param format The format string
+   * @param args The arguments to the format string
+   */
+  public static info(format: any, ...args: any[]): void {
+    console.log(`\033[1;92m${Poseidon.datetime()} [ INFO  ]\033[0m ${format}`, ...args);
+  }
 }
 
 export default Poseidon;
