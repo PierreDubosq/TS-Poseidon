@@ -17,7 +17,7 @@ class Poseidon {
    * @param args The arguments to the format string
    */
   public static debug(format: any, ...args: any[]): void {
-    console.log(`\033[1;94m${Poseidon.datetime()} [ DEBUG ]\033[0m ${format}`, ...args);
+    console.log(`\x1b[1;94m${Poseidon.datetime()} [ DEBUG ]\x1b[0m ${format}`, ...args);
   }
 
   /**
@@ -27,7 +27,7 @@ class Poseidon {
    * @param args The arguments to the format string
    */
   public static error(format: any, ...args: any[]): void {
-    console.log(`\033[1;91m${Poseidon.datetime()} [ ERROR ]\033[0m ${format}`, ...args);
+    console.log(`\x1b[1;91m${Poseidon.datetime()} [ ERROR ]\x1b[0m ${format}`, ...args);
   }
 
   /**
@@ -37,7 +37,7 @@ class Poseidon {
    * @param args The arguments to the format string
    */
   public static info(format: any, ...args: any[]): void {
-    console.log(`\033[1;92m${Poseidon.datetime()} [ INFO  ]\033[0m ${format}`, ...args);
+    console.log(`\x1b[1;92m${Poseidon.datetime()} [ INFO  ]\x1b[0m ${format}`, ...args);
   }
 
   /**
@@ -47,7 +47,7 @@ class Poseidon {
    * @param args The arguments to the format string
    */
   public static warn(format: any, ...args: any[]): void {
-    console.log(`\033[1;93m${Poseidon.datetime()} [ WARN  ]\033[0m ${format}`, ...args);
+    console.log(`\x1b[1;93m${Poseidon.datetime()} [ WARN  ]\x1b[0m ${format}`, ...args);
   }
 }
 
