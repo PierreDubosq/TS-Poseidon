@@ -9,6 +9,16 @@ class Poseidon {
 
     return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
   }
+
+  /**
+   * @brief Log a debug message
+   * 
+   * @param format The format string
+   * @param args The arguments to the format string
+   */
+  public static debug(format: any, ...args: any[]): void {
+    console.log(`\033[1;94m${Poseidon.datetime()} [ DEBUG ]\033[0m ${format}`, ...args);
+  }
 }
 
 export default Poseidon;
